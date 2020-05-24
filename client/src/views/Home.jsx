@@ -1,13 +1,12 @@
 import React from 'react'
 import '../css/home.css'
+import  NCJudicialBrandSeal from "../images/NCJudicialBrandSeal.png"
 
 const Home = (props) => {
 	return (
 		<div className='background'>
-			<div className='Home'>
-				<h1>Strategic Machines</h1>
-				<h2>Secure Messaging</h2>
-				<h3>JSON Web Token Demo</h3>
+			<div className='homeImage'>
+				<img src={NCJudicialBrandSeal} alt='seal' />
 			</div>
 		</div>
 	)
