@@ -1,9 +1,8 @@
-.background {
-    background: #002f87;
- 
-}
-
 .homeImage {
     margin: auto;
     width: 350px;
+}
+
+.selBtn2 {
+    background: #B0946D;
 }
