@@ -1,6 +1,8 @@
 import React from 'react'
 import httpClient from '../httpClient'
 import NCJudicialBrandSeal from "../images/NCJudicialBrandSeal.png"
+import { Link } from 'react-router-dom'
+import "../css/login.css"
 
 
 class LogIn extends React.Component {
@@ -43,6 +45,13 @@ class LogIn extends React.Component {
 							<input className='input' type="password" placeholder="Password" name="password" value={password} />
 							<button>Log In</button>
 						</form>
+						<div >
+							<Link to="/SignUp">
+								<button type="button" className='selBtn2'>
+									Signup
+								</button>
+							</Link>
+						</div>
 					</div>
 				</div>
 			</div>
