@@ -7,7 +7,6 @@ import LogIn from './views/LogIn'
 import LogOut from './views/LogOut'
 import SignUp from './views/SignUp'
 import Machine from './views/Machine'
-import Home from './views/Home'
 
 class App extends React.Component {
 	state = { currentUser: httpClient.getCurrentUser() }
@@ -49,7 +48,7 @@ class App extends React.Component {
 							: <Redirect to="/login" />
 					}} />
 
-					<Route path="/" component={Home} />
+					<Route path="/" component={LogIn} />
 
 				</Switch>
 			</div>

@@ -5,7 +5,6 @@ const NavBar = (props) => {
 	return (
 		<div className='NavBar'>
 			{props.currentUser
-			// there is a user logged in
 				? (
 					<span>
 						<Link to="/machine">Machine</Link>
@@ -13,9 +12,9 @@ const NavBar = (props) => {
 					</span>
 				)
 				: (
-
-					// there is not a user logged in
 					<span>
+						<Link to="/login">Log In</Link>
+						<Link to="/signup">Sign Up</Link>
 					</span>
 				)
 			}

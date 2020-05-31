@@ -1,6 +1,9 @@
 const jwt = require('jsonwebtoken')
 const User = require('../models/User.js')
-const JWT_SECRET  = process.env.JWT_SECRET;
+
+// Note this is the supper secret for signing the JWT
+// this should be acquired via .env or a microservice
+const JWT_SECRET  = 'thisismysecretkey'
 
 // function for creating tokens
 function signToken(user) {

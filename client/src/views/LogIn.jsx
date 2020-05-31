@@ -1,9 +1,6 @@
 import React from 'react'
 import httpClient from '../httpClient'
 import NCJudicialBrandSeal from "../images/NCJudicialBrandSeal.png"
-import { Link } from 'react-router-dom'
-import "../css/login.css"
-
 
 class LogIn extends React.Component {
 	state = {
@@ -39,19 +36,12 @@ class LogIn extends React.Component {
 						<div className='homeImage'>
 							<img src={NCJudicialBrandSeal} alt='seal' />
 						</div>
-						<br></br>
+						<h3 className='homeTitle'>Welcome to Citation Reveived</h3>
 						<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
-							<input className='input' type="text" placeholder="Email" name="email" value={email} />
-							<input className='input' type="password" placeholder="Password" name="password" value={password} />
+							<input type="text" placeholder="Email" name="email" value={email} />
+							<input type="password" placeholder="Password" name="password" value={password} />
 							<button>Log In</button>
 						</form>
-						<div >
-							<Link to="/SignUp">
-								<button type="button" className='selBtn2'>
-									Signup
-								</button>
-							</Link>
-						</div>
 					</div>
 				</div>
 			</div>
