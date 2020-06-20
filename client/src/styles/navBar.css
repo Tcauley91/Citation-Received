@@ -26,10 +26,17 @@ input[type='password'] {
 	width: 250px;
 }
 
-
-
 button {
 	background: #B0946D;
 	border: none;
 	width: 250px;
+}
+
+.homeHeader{
+	/* background: #B0946D; */
+	align-content: center;
+	color: #ffffff;
+	width: 100%;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-top: 25px;
 }
