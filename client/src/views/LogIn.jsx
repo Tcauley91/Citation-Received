@@ -1,6 +1,8 @@
 import React from 'react'
 import httpClient from '../httpClient'
 import NCJudicialBrandSeal from "../images/NCJudicialBrandSeal.png"
+import '../styles/login.css'
+
 
 class LogIn extends React.Component {
 	state = {
@@ -32,16 +34,20 @@ class LogIn extends React.Component {
 		return (
 			<div className='LogIn'>
 				<div className='row'>
-					<div className='column column-33 column-offset-33'>
+					<div className='column'>
 						<div className='homeImage'>
 							<img src={NCJudicialBrandSeal} alt='seal' />
 						</div>
-						<h3 className='homeTitle'>Welcome to Citation Reveived</h3>
-						<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
-							<input type="text" placeholder="Email" name="email" value={email} />
-							<input type="password" placeholder="Password" name="password" value={password} />
-							<button>Log In</button>
-						</form>
+						<div className='homeHeader'>
+							<h3 className='homeTitle'>Welcome to Citation Reveived</h3>
+						</div>
+						<div className='loginForm'>
+							<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
+								<input type="text" placeholder="Email" name="email" value={email} />
+								<input type="password" placeholder="Password" name="password" value={password} />
+								<button>Log In</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

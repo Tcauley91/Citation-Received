@@ -1,4 +1,5 @@
-.NavBar a, .NavBar button {
+.NavBar a,
+.NavBar button {
 	margin: 0 5px;
 	cursor: pointer;
 }
@@ -7,10 +8,28 @@
 	margin-bottom: 20px
 }
 
-a{
+a {
 	color: white;
 }
 
-html{
-	background:#002F87;
+html {
+	background: #002F87;
+}
+
+input[type='text'] {
+	background-color: white;
+	width: 250px;
+}
+
+input[type='password'] {
+	background-color: white;
+	width: 250px;
+}
+
+
+
+button {
+	background: #B0946D;
+	border: none;
+	width: 250px;
 }
