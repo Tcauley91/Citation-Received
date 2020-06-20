@@ -19,17 +19,24 @@ html {
 input[type='text'] {
 	background-color: white;
 	width: 250px;
+	margin: 0px 0px 20px -10px;
 }
 
 input[type='password'] {
 	background-color: white;
 	width: 250px;
+	margin: 0px 0px 20px -10px;
 }
 
 button {
 	background: #B0946D;
 	border: none;
 	width: 250px;
+	margin-left: -10px;
+	font-size: 2rem;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform: none;
+
 }
 
 .homeHeader{
@@ -38,5 +45,9 @@ button {
 	color: #ffffff;
 	width: 100%;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	margin-top: 25px;
+	margin-top: 20px;
+}
+
+h3{
+	font-size: 2.6rem
 }
