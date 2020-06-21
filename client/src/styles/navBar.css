@@ -21,20 +21,20 @@ html {
 input[type='text'] {
 	background-color: white;
 	width: 250px;
-	margin: 0px 0px 20px -10px;
+	margin: 0px 0px 20px 0px;
 }
 
 input[type='password'] {
 	background-color: white;
 	width: 250px;
-	margin: 0px 0px 20px -10px;
+	margin: 0px 0px 20px 0px;
 }
 
 button {
 	background: #B0946D;
 	border: none;
 	width: 250px;
-	margin-left: -10px;
+	/* margin-left: -10px; */
 	font-size: 2rem;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	text-transform: none;
@@ -42,8 +42,8 @@ button {
 }
 
 .homeHeader{
-	/* background: #B0946D; */
-	align-content: center;
+	background: #B0946D;
+	text-align: center;
 	color: #ffffff;
 	width: 100%;
 	font-family: Georgia, 'Times New Roman', Times, serif;
