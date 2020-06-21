@@ -1,5 +1,5 @@
 require('dotenv').config()
-
+require('./auth/index.js')
 const express = require('express')
 const logger = require('morgan')
 const mongoose = require('mongoose')
