@@ -35,7 +35,7 @@ class LogIn extends React.Component {
 			<div className='LogIn'>
 				<div className='row'>
 					<div className='column'>
-						<div className='homeImage'>
+						<div className='seal'>
 							<img src={NCJudicialBrandSeal} alt='seal' />
 						</div>
 						<div className='homeHeader'>
