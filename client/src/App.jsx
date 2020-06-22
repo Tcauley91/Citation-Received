@@ -6,7 +6,7 @@ import NavBar from './NavBar'
 import LogIn from './views/LogIn'
 import LogOut from './views/LogOut'
 import SignUp from './views/SignUp'
-import Machine from './views/Machine'
+import citationSearch from './views/citationSearch'
 
 class App extends React.Component {
 	state = { currentUser: httpClient.getCurrentUser() }
@@ -42,9 +42,9 @@ class App extends React.Component {
 						return <SignUp {...props} onSignUpSuccess={this.onLoginSuccess.bind(this)} />
 					}} />
 
-					<Route path="/machine" render={() => {
+					<Route path="/citationSearch" render={() => {
 						return currentUser
-							? <Machine />
+							? <citationSearch />
 							: <Redirect to="/login" />
 					}} />
 

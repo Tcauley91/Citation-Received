@@ -1,13 +1,13 @@
 import React from 'react'
 import vipImage from '../vip.png'
 
-const Machine = (props) => {
+const citationSearch = (props) => {
 	return (
 		<div className='VIP'>
-			<h1>Welcome to Strategic Machines!</h1>
+			<h3>Welcome to Citation Received!</h3>
 			<img src={vipImage} alt="VIP" />
 		</div>
 	)
 }
 
-export default Machine 
+export default citationSearch

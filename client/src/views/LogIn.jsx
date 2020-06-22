@@ -39,7 +39,7 @@ class LogIn extends React.Component {
 							<img src={NCJudicialBrandSeal} alt='seal' />
 						</div>
 						<div className='homeHeader'>
-							<h3 className='homeTitle'>Welcome to Citation Received</h3>
+							<h3 className='homeTitle'>Please Log In to Continue</h3>
 						</div>
 						<div className='loginForm'>
 							<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>

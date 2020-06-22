@@ -7,7 +7,7 @@ const NavBar = (props) => {
 			{props.currentUser
 				? (
 					<span>
-						<Link to="/machine">Machine</Link>
+						<Link to="/citationSearch">Search Citations</Link>
 						<Link to="/logout">Log Out</Link>
 					</span>
 				)
