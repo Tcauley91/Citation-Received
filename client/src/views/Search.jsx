@@ -1,7 +1,7 @@
 import React from 'react'
 import vipImage from '../vip.png'
 
-const citationSearch = (props) => {
+const Search = (props) => {
 	return (
 		<div className='VIP'>
 			<h3>Welcome to Citation Received!</h3>
@@ -10,4 +10,4 @@ const citationSearch = (props) => {
 	)
 }
 
-export default citationSearch
+export default Search
