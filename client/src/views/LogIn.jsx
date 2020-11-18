@@ -6,7 +6,7 @@ import '../styles/login.css'
 
 class LogIn extends React.Component {
 	state = {
-		fields: { email: '', password: '' }
+		fields: { badgeId: '', password: '' }
 	}
 
 	onInputChange(evt) {
@@ -21,7 +21,7 @@ class LogIn extends React.Component {
 	onFormSubmit(evt) {
 		evt.preventDefault()
 		httpClient.logIn(this.state.fields).then(user => {
-			this.setState({ fields: { email: '', password: '' } })
+			this.setState({ fields: { badgeId: '', password: '' } })
 			if (user) {
 				this.props.onLoginSuccess(user)
 				this.props.history.push('/')
@@ -30,14 +30,14 @@ class LogIn extends React.Component {
 	}
 
 	render() {
-		const { email, password } = this.state.fields
+		const { badgeId, password } = this.state.fields
 		return (
 			<div className='LogIn'>
 				<div className='row'>
 					<div className='column column-33 column-offset-33'>
 						<h1>Log In</h1>
 						<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
-							<input type="text" placeholder="Email" name="email" value={email} />
+							<input type="text" placeholder="BadgeId" name="badgeID" value={badgeId} />
 							<input type="password" placeholder="Password" name="password" value={password} />
 							<button>Log In</button>
 						</form>
