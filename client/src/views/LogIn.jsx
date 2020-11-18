@@ -34,20 +34,13 @@ class LogIn extends React.Component {
 		return (
 			<div className='LogIn'>
 				<div className='row'>
-					<div className='column'>
-						<div className='seal'>
-							<img src={NCJudicialBrandSeal} alt='seal' />
-						</div>
-						<div className='homeHeader'>
-							<h3 className='homeTitle'>Please Log In to Continue</h3>
-						</div>
-						<div className='loginForm'>
-							<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
-								<input type="text" placeholder="Email" name="email" value={email} />
-								<input type="password" placeholder="Password" name="password" value={password} />
-								<button>Log In</button>
-							</form>
-						</div>
+					<div className='column column-33 column-offset-33'>
+						<h1>Log In</h1>
+						<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
+							<input type="text" placeholder="Email" name="email" value={email} />
+							<input type="password" placeholder="Password" name="password" value={password} />
+							<button>Log In</button>
+						</form>
 					</div>
 				</div>
 			</div>
