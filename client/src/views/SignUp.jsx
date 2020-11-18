@@ -6,7 +6,7 @@ import NCJudicialBrandSeal from "../images/NCJudicialBrandSeal.png"
 // sign up form behaves almost identically to log in form. We could create a flexible Form component to use for both actions, but for now we'll separate the two:
 class SignUp extends React.Component {
 	state = {
-		fields: { name: '', email: '', password: '' }
+		fields: { name: '', badgeId: '', password: '' }
 	}
 
 	onInputChange(evt) {
@@ -21,7 +21,7 @@ class SignUp extends React.Component {
 	onFormSubmit(evt) {
 		evt.preventDefault()
 		httpClient.signUp(this.state.fields).then(user => {
-			this.setState({ fields: { name: '', email: '', password: '' } })
+			this.setState({ fields: { name: '', badgeId: '', password: '' } })
 			if (user) {
 				this.props.onSignUpSuccess(user)
 				this.props.history.push('/')
@@ -30,7 +30,7 @@ class SignUp extends React.Component {
 	}
 
 	render() {
-		const { name, email, password } = this.state.fields
+		const { name, badgeId, password } = this.state.fields
 		return (
 			<div className='SignUp'>
 				<div className='row'>
@@ -38,13 +38,10 @@ class SignUp extends React.Component {
 						<div className='seal'>
 							<img src={NCJudicialBrandSeal} alt='seal' />
 						</div>
-						{/* <div className='homeHeader'>
-							<h3>Sign Up</h3>
-						</div> */}
 						<div className='loginForm'>
 							<form onChange={this.onInputChange.bind(this)} onSubmit={this.onFormSubmit.bind(this)}>
 								<input type="text" placeholder="Name" name="name" value={name} />
-								<input type="text" placeholder="Email" name="email" value={email} />
+								<input type="text" placeholder="Badge Id" name="badgeId" value={badgeId} />
 								<input type="password" placeholder="Password" name="password" value={password} />
 								<button>Sign Up</button>
 							</form>
