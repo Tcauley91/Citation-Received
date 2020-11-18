@@ -1,7 +1,6 @@
 import React from 'react'
 import httpClient from '../httpClient'
 import NCJudicialBrandSeal from "../images/NCJudicialBrandSeal.png"
-import '../styles/login.css'
 
 
 class LogIn extends React.Component {

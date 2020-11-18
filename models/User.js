@@ -10,8 +10,8 @@ const userSchema = new mongoose.Schema({
 			minlength: 3 
 		},
 
-		email: { 
-			type: String, 
+		badgeId: { 
+			type: Number, 
 			required: true, 
 			unique: true 
 		 },
